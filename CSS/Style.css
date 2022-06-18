@@ -1,0 +1,288 @@
+:root {
+    --primaryColor: #ff274b;
+    --secondaryColor: #f7bcf7;
+    --lightColor: #ffffff;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #22282a;
+    --padding: 8%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+h1{
+    font-size: 3rem;
+    margin: 1.7rem 0;
+
+}
+h2{
+    font-size: 2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer; 
+}
+
+h3{
+    font-size: 1rem;
+    margin-bottom: 3.5rem;
+
+}
+h4{
+    font-size: 1rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondaryColor);
+}
+h5{
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+span{
+    color: var(--primaryColor);
+}
+p{
+    color: var(--secondaryColor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+nav{
+    padding-top: 1.5rem;
+    padding-left: 2%;
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a{
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,#171a1c,#171a1c);
+    background-color: var(--bgColor-1); 
+    display: flex;
+    flex-direction: column;
+
+}
+.naxu{
+    transition: 0.4s;
+}
+.naxu:hover{
+    transform: scale(1.2);
+}
+.imgnaxu{
+   
+    background-image: linear-gradient(to right,#171a1c,white);
+    border-radius: 30px;
+    width: 400px;
+    margin-bottom: 2px;
+   
+
+    
+}
+
+.content{
+    flex-grow: 1;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.content-text{
+    position: relative;
+    bottom: 20px;
+}
+.btn{
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+}
+
+.social{
+    margin-top: 2rem;
+}
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+.home .content-images{
+    width: 45% ;
+    height: 90% ;
+    position: relative;
+    align-self: flex-end;
+    
+    
+}
+.home .content-images img{
+    position: absolute;
+    bottom: 5%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-40%);
+    
+}
+
+.about {
+    background-color: var(--bgColor-2);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .content-images{
+    width: 35%;
+}
+.about .content-images img{
+    width: 90%;
+}
+.about .content-text{
+    width: 35%;
+    text-align: center;
+}
+.services{
+    background-color: var(--bgColor-1);
+    padding: 1%;
+}
+.text-center{
+    text-align: center;
+}
+.im1{
+width: 50%;
+}
+.im2{
+    width: 25%;
+    
+}
+.box{
+    display: flex;
+
+    justify-content: space-between;
+}
+.card{
+    width: 300px;
+    background-color: var(--bgColor-2);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+}
+.projets {
+    background-color: var(--bgColor-2);
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projets .content-projets{
+    width: 100%;
+}
+.content-projet{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.kra{
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.lala{
+    text-align: center;
+}
+.btna{
+    width:50px;
+}
+.diva{
+    width: 590px;
+}
+.welcome{
+    width: 50px;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+  }
+  
+  input[type=submit]:hover {
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    background-color:var(--bgColor-1);
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .hassan{
+    border-radius: 20px;
+ 
+  }
+  
+
